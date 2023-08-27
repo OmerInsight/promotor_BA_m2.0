@@ -1,0 +1,297 @@
+/* Paleta de Colores con la que trabajaremos de este modo 
+configuramos nuestro propio set con nombres que se nos haga facil de asociar*/
+root {
+    --rosa: #d6b3b1;
+    --violeta-oscuro: #231b42;
+    --violeta-medio: #cbb6b5;
+    --violeta-claro: #d8c9c8;
+    --violeta-blanco: #f2eded;
+    --violeta-medium: #a94e96;
+}
+
+
+
+/* Configuraciones Generales Estilos generales al body de la pagina */
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #323132;
+    background-image: url(Fondo\ floral.jpg);
+}
+
+button {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+/* Configuraciones de la barra de Navegacion */
+header {
+    width: 100%;
+    height: 30vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: 100%;
+
+}
+
+.container-nav {
+    display: flex;
+    padding: 20px;
+    height: 50px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 30px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+}
+
+li {
+    color: var(--violeta-oscuro);
+    list-style-type: none;
+
+}
+
+li>a {
+    padding: 8px 24px;
+    color: var(--violeta-oscuro);
+
+}
+
+li:hover {
+    color: #a94e96;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+
+.brand {
+    color: var(--violeta-oscuro);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.brand:hover {
+    color: #a94e96;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.button-menu-toggle {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--violeta-medium);
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Configuraciones de Responsive Dising */
+
+@media (max-width: 720px) {
+    header {
+        background-image: none;
+        height: 90px;
+    }
+
+    .container-nav {
+        background-color: #4B3869;
+        display: flex;
+        padding: 20px;
+        height: 50px;
+
+    }
+
+    .column {
+        flex: 100%;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .button-menu-toggle {
+        display: block;
+        background-color: #00FFCA;
+        border: none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #4b3869;
+    }
+
+    .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.95);
+        width: 90%;
+        height: 100%;
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /* footer Responsive*/
+
+    .integrantes p {
+        position: static;
+        margin-bottom: -15px;
+        text-align: center;
+        margin-left: 55px;
+    }
+}
+
+
+/* CONFIGURACIONES DE TITULOS DE PARRAFOS */
+h3, h1 {
+    color: #664E88;
+    margin-top: 45px;
+}
+
+/* Configuracion de Contenido del main*/
+.principal img {
+    margin: 40px;
+    border-radius: 15%;
+    width: 350px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3)
+}
+
+.secundario img {
+    margin-left: 20%;
+    margin-top: 30%;
+    border-radius: 15%;
+    width: 300px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3)
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+}
+
+.secundario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.secundario section {
+    flex: 1;
+    flex-direction: column;
+    min-height: 300px;
+    align-items: center;
+}
+
+
+.secundario p {
+    margin-inline: 20%;
+}
+
+.principal p {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    font-style: italic;
+    color: var(--violeta-oscuro);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.secundario p {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    font-style: italic;
+    color: var(--violeta-oscuro);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Configuracion Formulario */
+.input-celda,
+.formulario textarea {
+    display: block;
+    margin: 10px;
+    border-radius: 7px;
+    border-color: #71096994;
+
+
+}
+
+.conteneform {
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+    background-color: #4b3869;
+    flex-direction: column;
+    background-image: url(Fondo_Formulario\ 2.jpg);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    border-color: #323132;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3)
+}
+
+.formulario {
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* CONFIGURACIONES DE PAGINA "FOOTER" */
+footer {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #A9E4D7;
+    background-color: rgba(75, 56, 105, 0.8);
+    padding: 3%;
+    margin-top: 10%;
+    text-align: center;
+
+}
+
+.elements-footer {
+    padding: 7px;
+}

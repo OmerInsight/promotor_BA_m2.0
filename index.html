@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal de Beauty Makeup</title>
+    <!-- Estilos CSS este es un enlace para conectarlo con el archivo style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Fuentes (tipografias) en este caso hemos utilizado fuentes importadas de google como lo enseñad en clase -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Wix+Madefor+Display:wght@400;700&family=Work+Sans:ital,wght@0,100;0,500;1,100;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de Navegacion de la pagina -->
+    <header style="background-image: url(./Background_portada__2.png);">
+
+        <div class="container-nav">
+            <nav class="navbar">
+                <a href="index.html" class="brand">Inicio</a>
+                <ul class="nav-links">
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/quienes_somos.html">Quienes Somos</a></li>
+                    <li><a href="./pages/contactanos.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="button-menu-toggle">Menu</button>
+        </div>
+    </header>
+
+    <!-- Este es el main es decir el contenido pricipal de la pagina -->
+    <main class="main">
+
+        <!-- El contenido esta compuesto de Seciones una principal y otra secundaria de esta manera se nos
+        facilita al momento de darle estilo-->
+        <section class="principal">
+            <div class="image-container">
+                <img src="./Imagen original.jpg" alt="">
+            </div>
+
+            <p>Somos Beauty Makeup tu opción más acertada para mantener tu belleza y tu cuidado, estética y físicamente saludable. Nuestras y nuestros clientes nos avalan, son tantas las vidas que cambian, los ánimos que cambias cuando no solo te sientes bella o bello, sino cuando lo puedes expresar o reflejar también con tu cuerpo y esto es parte de nuestro compromiso y profesionalismo, no dude en visitarnos o contactarnos.</p>
+
+        </section>
+        <Div class="secundario">
+            <Section class="section">
+                <div class="image-container">
+                    <img src="./Imagen Masoterapia.jpg" alt="">
+                </div>
+                <p>
+                    Tómate un tiempo para consentirte o para consentir a alguien que quieras.
+
+                    Recuerda que tenemos disponibles nuestras Tarjetas de Regalo (GiftCards) para que sorprendas a quien
+                    quieras.
+                </p>
+            </Section>
+
+            <Section class="section">
+                <div class="image-container">
+                    <img src="./Customer imagen.jpg" alt="">
+                </div>
+
+                <p>
+                    Estas cejas Efecto Polvo son todo lo que está bien 😍🔥 ¿ustedes qué opinan?
+                </p>
+            </Section>
+
+
+
+            <Section class="section">
+                <div class="image-container">
+                    <img src="./Curso Imagen.jpg" alt="">
+                </div>
+                <p>
+                    ¡Enhorabuena, chicas! 🫶🏽 Por acá estaré siempre para ayudarlas en lo que necesiten ☺️
+                </p>
+            </Section>
+        </Div>
+    </main>
+
+    <!--Formulario de Contacto-->
+    <div class="conteneform">
+        <h1>Estamos atentos a tus dudas</h1>
+        <section class="formulario">
+            <div class="celdas">
+                <legend>Escríbenos y en 24hrs te contestaremos tu consulta:</legend>
+                <input class="input-celda" name="nombre" type="text" 
+                placeholder="INGRESA TU NOMBRE">
+                <input class="input-celda" name="apellido" type="text" 
+                placeholder="INGRESA TU APELLIDO">
+                <input class="input-celda" name="email" type="email" 
+                placeholder="INGRESA TU MAIL">
+                <textarea name="comentario" cols="40" placeholder="Escribe tu consulta:" rows="10"
+                style="color: #00FFCA;"></textarea>
+                <br>
+                <button class="boton-servicios">Enviar</button>
+            </div>
+        </section>
+    </div>
+    <!-- la etiqueta script se utiliza en html para insertar el codigo de javascript  -->
+<script src="./sript.js"></script>   
+</body>
+
+<!-- La ultima parte de la pagina es un footer para dejarle informacion de contacto al cliente y otras referencias -->
+<footer>
+    <div class="container-footer">
+        <div class="elements-footer">
+            &copy; 2023 Beauty Makeup. | Política de cookies | Aviso legal
+            Síguenos en Instagram
+        </div>
+        <div class="elements-footer">
+            Tel. +5411990000 • hola@beautymakeup.es • Síguenos en Instagram
+        </div>
+        <div class="elements-footer">
+            ¿Hablamos? Contáctanos en hola@beautymakeup.es o reserva tu tu proximo gusto.
+            aquí.
+        </div>
+    </div>
+</footer>
